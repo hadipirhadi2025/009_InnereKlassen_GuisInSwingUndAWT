@@ -34,13 +34,48 @@ import java.awt.*;
  * </pre>
  */
 public class ErstesFenster extends JFrame{
+
+    /**
+     * <pre>
+     *     Demonstriert wie Interaktion mit dem Benutzer (hier Klicken) funktioniert.
+     *     Wenn ein JButton geklickt wird: erstellt eine Objekt vom Typ ActionEvent
+     *     Intern hält der JButton ein Array von Objekten, die beim JButton registeriert sind ubd
+     *     "informiert" werden wollen, wenn der JButton gecklickt wird: Ruf bei den Objekten
+     *     die actionPerformed auf, und übergibt als  Parameter das erstellt ActionEvent.
+     *     Objekte, die sich beim JButton registrieren möchten, müssen das ActionListener Interface implementieren
+     *
+     *     Was tun wir?
+     *     1) Eigene Klasse schreiben, die das ActionListener Interface implementiert
+     *     2) Legt fest, was beim Aufruf (durch JButton) der actionPerformed Metode passieren soll
+     *     3) Erstellen eines Objekts dieser Klasse
+     *     4) Objekt beim JButton registrieren (addActionListener)
+     *     5) testen
+     * </pre>
+     */
+
+    private JButton klickMich = new JButton("Klick mich");
+    /**
+     * Wenn der user auf Klickmich JButton Klickt, soll hier die aktuelle Uhrzeit angezeigt werden
+     */
+    private JLabel uhrzeitAnzeige = new JLabel("XX:XX:XX");
+
+    /**
+     * Wird die Anwendung beenden: System.exit(42)
+     */
+    private JButton beenden = new JButton("Schluss");
+    /**
+     * Spielewiese
+     */
+    private JLabel platz = new JLabel("Experiemente");
+
+    /**
+     *
+     */
     public ErstesFenster()  {
         super("Schönes Fenster");
         setSize(350, 300);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
-
-
     }
 }
