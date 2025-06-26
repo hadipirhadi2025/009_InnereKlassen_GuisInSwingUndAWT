@@ -97,8 +97,18 @@ public class ErstesFenster extends JFrame{
      * </pre>
      */
     private void verwendenKlickHandler() {
-        KlickHandler meinHandler = new KlickHandler();
-        klickMich.addActionListener(meinHandler);
+//        //Version 1
+//        KlickHandler meinHandler = new KlickHandler();
+//        klickMich.addActionListener(meinHandler);
+        //Version 2
+//        Object meinHandler = new KlickHandler();
+//        klickMich.addActionListener(meinHandler);
+        //Version 2
+//        ActionListener meinHandler = new KlickHandler();
+//        klickMich.addActionListener(meinHandler);
+        //Version 3
+        klickMich.addActionListener(new KlickHandler());
+
 
     }
 }
