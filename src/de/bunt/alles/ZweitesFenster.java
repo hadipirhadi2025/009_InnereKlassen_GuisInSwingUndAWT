@@ -46,7 +46,13 @@ public class ZweitesFenster extends JFrame {
     }
 
     private void verwendenInnerKlickHandler() {
-        InnerKlickHandler meinHandler = new InnerKlickHandler();
-        klickMich.addActionListener(meinHandler);
+//        //Version1
+//        InnerKlickHandler meinHandler = new InnerKlickHandler();
+//        klickMich.addActionListener(meinHandler);
+//        //Version2
+//        ActionListener meinHandler = new InnerKlickHandler();
+//        klickMich.addActionListener(meinHandler);
+        //Version3
+        klickMich.addActionListener(new InnerKlickHandler());
     }
 }
