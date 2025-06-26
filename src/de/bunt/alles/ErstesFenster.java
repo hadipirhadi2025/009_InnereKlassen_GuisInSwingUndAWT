@@ -13,8 +13,15 @@ import javax.swing.*;
  *
  *     import javax.swing.*; Alle Klassen aus diesem Package sind importiert.
  *
- *     Die Klasse ErstesFenster ist ein JFrame (oft statt dessen ein hat ein JFrame)
+ *     Die Klasse ErstesFenster ist ein JFrame (oft statt dessen hat ein hat ein JFrame)
+ *
+ *     HIER: ErstesFenster extends JFrame
+ *     OFT:Public class ErstFenster{
+ *         private JFrame fenster;
+ *     }
  * </pre>
  */
 public class ErstesFenster extends JFrame{
+    private JFrame fenster;
+
 }
