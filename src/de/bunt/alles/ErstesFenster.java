@@ -83,5 +83,22 @@ public class ErstesFenster extends JFrame{
         add(beenden);
         add(platz);
         add(platz);
+
+        verwendenKlickHandler();
+    }
+
+    /**
+     * <pre>
+     *     1) Eigene Klasse schreiben, die das ActionListener Interface implementiert
+     *     2) Legt fest, was beim Aufruf (durch JButton) der actionPerformed Metode passieren soll
+     *     3) Erstellen eines Objekts dieser Klasse
+     *     4) Objekt beim JButton registrieren (addActionListener)
+     *     5) testen
+     * </pre>
+     */
+    private void verwendenKlickHandler() {
+        KlickHandler meinHandler = new KlickHandler();
+        klickMich.addActionListener(meinHandler);
+
     }
 }

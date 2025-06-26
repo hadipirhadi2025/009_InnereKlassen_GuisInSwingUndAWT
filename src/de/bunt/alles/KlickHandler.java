@@ -15,6 +15,9 @@ import java.time.format.DateTimeFormatter;
  *     Ein Klickhandler ist ein ActcíonListener (imlements)
  *     ActionListener actionListenerReferenz = new KlickHandler();
  *
+ *     ------- Im JButton ----------
+ *     ActionEvent event = new ActionEvent();
+ *     registriertenObjekt[0].actionPerformed(event);
  */
 public class KlickHandler implements ActionListener {
 
