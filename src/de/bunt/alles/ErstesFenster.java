@@ -21,6 +21,16 @@ import java.awt.*;
  *     OFT:Public class ErstFenster{
  *         private JFrame fenster;
  *     }
+ *     JFrame Konfiguration:
+ *          super("Schönes Fenster");
+ *         setSize(350, 300);
+ *         setLocationRelativeTo(null);
+ *         setDefaultCloseOperation(EXIT_ON_CLOSE);
+ *
+ *     Organisiert werden JFrames mit Hilfe von Layout-Managern : java.awt
+ *     HIER: FLowLayout, bei Java FX über Parents: zb FlowPanel
+ *
+ *     setLayout(new FlowLayout()); Anonymes Objekt
  * </pre>
  */
 public class ErstesFenster extends JFrame{
@@ -28,20 +38,9 @@ public class ErstesFenster extends JFrame{
         super("Schönes Fenster");
         setSize(350, 300);
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
 
-    }
-//    public ErstesFenster() throws HeadlessException {
-//    }
 
-    public ErstesFenster(GraphicsConfiguration gc) {
-        super(gc);
-    }
-
-    public ErstesFenster(String title) throws HeadlessException {
-        super(title);
-    }
-
-    public ErstesFenster(String title, GraphicsConfiguration gc) {
-        super(title, gc);
     }
 }
