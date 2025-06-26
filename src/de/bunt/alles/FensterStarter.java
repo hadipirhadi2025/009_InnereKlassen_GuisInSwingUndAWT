@@ -9,7 +9,8 @@ package de.bunt.alles;
  */
 public class FensterStarter {
     public static void main(String[] args) {
-        ErstesFenster meinGui = new ErstesFenster();
-        meinGui.setVisible(true);
+        //ErstesFenster meinGui = new ErstesFenster();
+        ZweitesFenster meinGui = new ZweitesFenster();
+        meinGui.setVisible(true);//Zeig das Fenster/JFrame an
     }
 }
