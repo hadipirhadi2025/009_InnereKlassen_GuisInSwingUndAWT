@@ -77,5 +77,11 @@ public class ErstesFenster extends JFrame{
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
+
+        add(klickMich);
+        add(uhrzeitAnzeige);
+        add(beenden);
+        add(platz);
+        add(platz);
     }
 }
