@@ -22,6 +22,6 @@ import javax.swing.*;
  * </pre>
  */
 public class ErstesFenster extends JFrame{
-    private JFrame fenster;
+    //private JFrame fenster;
 
 }
