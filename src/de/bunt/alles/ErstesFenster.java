@@ -107,7 +107,7 @@ public class ErstesFenster extends JFrame{
 //        ActionListener meinHandler = new KlickHandler();
 //        klickMich.addActionListener(meinHandler);
         //Version 3
-        klickMich.addActionListener(new KlickHandler());
+        klickMich.addActionListener(new KlickHandler(uhrzeitAnzeige));
 
 
     }

@@ -1,5 +1,6 @@
 package de.bunt.alles;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalTime;
@@ -21,12 +22,20 @@ import java.time.format.DateTimeFormatter;
  */
 public class KlickHandler implements ActionListener {
 
+    private JLabel labelAusDemFenster;
+
+    public KlickHandler(JLabel labelAusDemFenster) {
+        this.labelAusDemFenster = labelAusDemFenster;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         LocalTime jetzt = LocalTime.now();
         DateTimeFormatter formatHelfer = DateTimeFormatter.ofPattern("HH:mm:ss");
         String jetztAlsString = jetzt.format(formatHelfer);
         System.out.println(jetztAlsString);
+        //Wunsh: Das JLabel aus dem ErstesFenster - Klasse soll geändert werden: setText
+        labelAusDemFenster.setText(jetztAlsString);
 
     }
 }
