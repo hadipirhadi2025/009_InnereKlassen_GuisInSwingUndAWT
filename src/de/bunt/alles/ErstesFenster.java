@@ -2,6 +2,8 @@ package de.bunt.alles;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * <pre>
@@ -93,7 +95,31 @@ public class ErstesFenster extends JFrame{
         /// ////////////////////////////
     }
 
-    private void verwendenLocalKlickHandler(int maximumAbzeige) {
+
+    /**
+     * Lokal Inner Klasse: Zugriff auf Attribute und Methoden (Member) der äüßeren Klasse
+     * und hat Zugriff auf lokale Variablen, zb Parameter, falls sie final ist, oder sich wie final verhält:
+     * effectiv final
+     * @param maximumAnzeige maximale Klicks die angezeigt werden
+     */
+    private void verwendenLocalKlickHandler(int maximumAnzeige) {
+        class LocalKlickHandler implements ActionListener {
+
+
+            private int klickZaehler = 1 ;
+            public void actionPerformed(ActionEvent e) {
+                setTitle("Geklickt " + klickZaehler);
+                klickZaehler++;
+                if(klickZaehler >= maximumAnzeige){
+                    klickZaehler = 1;
+                }
+//                if(klickZaehler==42){
+//                    maximumAnzeige=klickZaehler;
+//                }
+            }
+        }
+        System.out.println("Für die Methode wurde eine maximale Klickanzeigen von "+maximumAnzeige+" gewählt:");
+       // maximumAnzeige = 200;
     }
 
     /**
