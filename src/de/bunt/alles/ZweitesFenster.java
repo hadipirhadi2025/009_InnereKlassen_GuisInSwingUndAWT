@@ -65,12 +65,9 @@ public class ZweitesFenster extends JFrame {
         //version1 :Mit Lamda Ausdrücken nocht mölich
 
         //version2:
-        ActionListener meinHandler = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Grueselig");
-            }
-        }
+        ActionListener meinHandler = e -> System.out.println("Grueselig");
+        klickMich.addActionListener(meinHandler);
+
     }
 
     private void VerwendetBeenden() {
