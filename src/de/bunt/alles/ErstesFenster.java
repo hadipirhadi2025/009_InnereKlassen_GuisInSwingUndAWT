@@ -85,6 +85,15 @@ public class ErstesFenster extends JFrame{
         add(platz);
 
         verwendenKlickHandler();
+        verwendenLocalKlickHandler(99);
+        /// ////////////////////////////
+        //dasMacheIchMorgens();
+        //dasMacheIchMittags();
+        //dasMacheIchAbends();
+        /// ////////////////////////////
+    }
+
+    private void verwendenLocalKlickHandler(int maximumAbzeige) {
     }
 
     /**
