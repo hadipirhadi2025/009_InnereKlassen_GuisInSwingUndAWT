@@ -51,6 +51,19 @@ public class ZweitesFenster extends JFrame {
         //dasMacheIchAbends();
         /// ////////////////////////////
         verwendenAnonymerKlickHandler();
+        //me
+        VerwendetBeenden();
+    }
+
+    private void VerwendetBeenden() {
+        beenden.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // --- Hier ist der Code, um das Programm zu beenden ---
+                System.out.println("Beenden-Button wurde geklickt. Programm wird geschlossen.");
+                System.exit(0); // Beendet die Java Virtual Machine
+            }
+        });
     }
 
     /**
