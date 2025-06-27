@@ -59,7 +59,8 @@ public class ZweitesFenster extends JFrame {
     /**
      * Interfaces, die gensu eine abstrakte Methode haben, heißen Funktionale Interfaces.
      * Funktionale Interfaces ermöglichen Lambda Ausdrücke
-     *
+     * Lambda Ausdruck erstellt einObjekt einer Anonymen Klasse, die ein Funktionales Interface implementiert
+     * Lambda Ausdrücke werden, erst zur Laufzeit ausgewertet
      */
     private void verwendenLambdaKlickHandler() {
         //version1 :Mit Lamda Ausdrücken nocht mölich
@@ -69,7 +70,7 @@ public class ZweitesFenster extends JFrame {
 //        klickMich.addActionListener(meinHandler);
 
         //version3
-        klickMich.addActionListener(e -> System.out.println("Das ist Lambda Ausdruck"));
+        klickMich.addActionListener(event -> System.out.println("Das ist Lambda Ausdruck"));
     }
 
     private void VerwendetBeenden() {
@@ -88,6 +89,7 @@ public class ZweitesFenster extends JFrame {
      * Anonyme Klassen kann nur ein einziges Mal instanziert werden: nur ein new-Aufruf
      * Anonyme Klassen werden erstellt, indem beim Konstruktoraufruf angegeben wird, welche Klasse erwitert wird
      * bzw welches Interface implementiert wird
+     * .... class ???? implements ActionListener
      */
     private void verwendenAnonymerKlickHandler() {
         //Versuib1, Klassenname als Referenztyp, hier nicht möglich, die Klasse hat keinen Name
