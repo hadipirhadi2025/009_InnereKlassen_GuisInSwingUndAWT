@@ -68,7 +68,7 @@ public class ZweitesFenster extends JFrame {
         ActionListener meinHandler = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                System.out.println("Grueselig");
             }
         }
     }
