@@ -65,9 +65,11 @@ public class ZweitesFenster extends JFrame {
         //version1 :Mit Lamda Ausdrücken nocht mölich
 
         //version2:
-        ActionListener meinHandler = klick -> System.out.println("Grueselig");
-        klickMich.addActionListener(meinHandler);
+//        ActionListener meinHandler = klick -> System.out.println("Grueselig");
+//        klickMich.addActionListener(meinHandler);
 
+        //version3
+        klickMich.addActionListener(e -> System.out.println("Das ist Lambda Ausdruck"));
     }
 
     private void VerwendetBeenden() {
