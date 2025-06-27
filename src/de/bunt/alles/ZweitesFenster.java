@@ -51,8 +51,26 @@ public class ZweitesFenster extends JFrame {
         //dasMacheIchAbends();
         /// ////////////////////////////
         verwendenAnonymerKlickHandler();
+        verwendenLambdaKlickHandler();
         //me
         VerwendetBeenden();
+    }
+
+    /**
+     * Interfaces, die gensu eine abstrakte Methode haben, heißen Funktionale Interfaces.
+     * Funktionale Interfaces ermöglichen Lambda Ausdrücke
+     *
+     */
+    private void verwendenLambdaKlickHandler() {
+        //version1 :Mit Lamda Ausdrücken nocht mölich
+
+        //version2:
+        ActionListener meinHandler = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        }
     }
 
     private void VerwendetBeenden() {
