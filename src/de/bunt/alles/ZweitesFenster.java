@@ -76,9 +76,16 @@ public class ZweitesFenster extends JFrame {
         }
         //System.out.println("Für die Methode wurde eine maximale Klickanzeigen von "+maximumAnzeige+" gewählt:");
         // maximumAnzeige = 200;
-        LocalKlickHandler meinHandler = new LocalKlickHandler();
-        klickMich.addActionListener(meinHandler);
+        //Version1
+        //LocalKlickHandler meinHandler = new LocalKlickHandler();
+        //klickMich.addActionListener(meinHandler);
+        //Version2
+        //ActionListener meinHandler = new LocalKlickHandler();
+        //klickMich.addActionListener(meinHandler);
+        //Version3
+        klickMich.addActionListener(new LocalKlickHandler());
     }
+
     private void verwendenInnerKlickHandler() {
 //        //Version1
 //        InnerKlickHandler meinHandler = new InnerKlickHandler();
