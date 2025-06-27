@@ -103,11 +103,12 @@ public class ErstesFenster extends JFrame{
      * @param maximumAnzeige maximale Klicks die angezeigt werden
      */
     private void verwendenLocalKlickHandler(int maximumAnzeige) {
+        String txt = "Geklicked";
         class LocalKlickHandler implements ActionListener {
-
-
             private int klickZaehler = 1 ;
             public void actionPerformed(ActionEvent e) {
+                //darf nicht
+               // txt = txt + ":-)";
                 setTitle("Geklickt " + klickZaehler);
                 klickZaehler++;
                 if(klickZaehler >= maximumAnzeige){
