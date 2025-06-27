@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 public class ZweitesFenster extends JFrame {
 
@@ -43,12 +44,34 @@ public class ZweitesFenster extends JFrame {
         add(platz);
 
         verwendenInnerKlickHandler();
-        verwendenLocalKlickHandler(99);
+        verwendenLocalKlickHandler(9);
         /// ////////////////////////////
         //dasMacheIchMorgens();
         //dasMacheIchMittags();
         //dasMacheIchAbends();
         /// ////////////////////////////
+        verwendenAnonymerKlickHandler();
+    }
+
+    /**
+     * Anonyme Klassen: Klassen, die keinen Name/Bezeicher haben - > kein Referenztyp
+     * Anonyme Klassen kann nur ein einziges Mal instanziert werden: nur ein new-Aufruf
+     * Anonyme Klassen werden erstellt, indem beim Konstruktoraufruf angegeben wird, welche Klasse erwitert wird
+     * bzw welches Interface implementiert wird
+     */
+    private void verwendenAnonymerKlickHandler() {
+        //Versuib1, Klassenname als Referenztyp, hier nicht möglich, die Klasse hat keinen Name
+
+        //Version2
+        ActionListener meinHandler = new ActionListener() {
+            private int grosse = 10;
+            @Override
+            public void actionPerformed(ActionEvent ereignis) {
+
+            }
+        };
+
+        Random a;
     }
 
     /**
