@@ -63,17 +63,28 @@ public class ZweitesFenster extends JFrame {
         //Versuib1, Klassenname als Referenztyp, hier nicht möglich, die Klasse hat keinen Name
 
         //Version2
-        ActionListener meinHandler = new ActionListener() {
+//        ActionListener meinHandler = new ActionListener() {
+//            private int grosse = 10;
+//            @Override
+//            public void actionPerformed(ActionEvent ereignis) {
+//                Font schriftArt = new Font("Comic Sans Ms", Font.BOLD, grosse);
+//                beenden.setFont(schriftArt);
+//                grosse++;
+//            }
+//        };
+//        klickMich.addActionListener(meinHandler);
+//        Random a;
+        //Version3
+        klickMich.addActionListener(new ActionListener(){
             private int grosse = 10;
+
             @Override
-            public void actionPerformed(ActionEvent ereignis) {
-                Font schriftArt = new Font("Comic Sans Ms", Font.BOLD, grosse);
+            public void actionPerformed(ActionEvent e) {
+                Font schriftArt = new Font("Comic San Ms", Font.BOLD, grosse);
                 beenden.setFont(schriftArt);
                 grosse++;
             }
-        };
-        klickMich.addActionListener(meinHandler);
-        Random a;
+        } );
     }
 
     /**
