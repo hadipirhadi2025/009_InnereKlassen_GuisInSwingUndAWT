@@ -67,10 +67,12 @@ public class ZweitesFenster extends JFrame {
             private int grosse = 10;
             @Override
             public void actionPerformed(ActionEvent ereignis) {
-
+                Font schriftArt = new Font("Comic Sans Ms", Font.BOLD, grosse);
+                beenden.setFont(schriftArt);
+                grosse++;
             }
         };
-
+        klickMich.addActionListener(meinHandler);
         Random a;
     }
 
